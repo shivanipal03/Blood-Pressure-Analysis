@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div id="about">
+        <div id="nav">
+            <div id="navleft">
+                <div id="logo">
+                    <img src="{{ url_for('static', filename='images/bplogo.webp') }}" alt="" height="50px" width="50px">
+                </div>
+            <div id="head"><h2>MediCare</h2></div>
+                
+            </div>
+            <div id="navright">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                
+                <li><a href="/details"><button>Check your Blood Pressure</button></a></li>
+              </ul>
+            </div>
+        </div>
+        
+        
+        <h2 id="heading"><u>INFORMATION</u></h2>
+        
+      
+        <div id="abttop">
+            <div id="atl">
+                <h3><u>What is Blood Pressure?</u></h3>
+                <p>Blood pressure (BP) measures the force of bllod purshing against artery walls. Maintaining healthy BP 
+                levels is crucial for overall cardiovascular health and 
+                preventing diseases like heart attackand stroke.
+                It's measured in millimeters of mercury (mmHg) and recorded with two numbers:</p>
+                <ol>
+                    <li><b>Systolic Pressure:</b> The pressure when the heart beats while pumping blood.</li>
+                    <li><b>Diastolic Pressure:</b> The pressure when the heart is at rest between beats.</li>
+                </ol>
+            </div>
+        
+        <br/>
+        <div>
+            <div id="aml">
+                <h3><u>Normal Blood Pressure Range</u></h3>
+            <ol>
+                <li><b>Normal BP:</b> Systolic < 120 mmHg and Diastolic < 80 mmHg</li>
+                <li><b>Elevated BP:</b> Systolic < 120-129 mmHg and Diastolic < 80 mmHg</li>
+                <li><b>Hypertension Stage 1:</b> Systolic < 130-139 mmHg or Diastolic < 80-89 mmHg</li>
+                <li><b>Hypertension Stage 2:</b> Systolic ≥ 140 mmHg or Diastolic ≥ 90 mmHg</li>
+            </ol>
+        
+            <h3><u>Causes of High Blood Pressure</u></h3>
+            <ol>
+                <li><b>Primary(Essential) Hypertension:</b> No identifiable cause, develops over many years.</li>
+                <li><b>Secondary Hypertension:</b> Caused by an underlying condition, such as kidney disease, adrenal gland tumors, thyroid problems, or certain medications.</li>
+            </ol>
+            </div>
+            <br/>
+            <div id="amr"><img src="{{ url_for('static', filename='images/bpchart.jpg') }}" height="260px" width="410px"></div>
+        </div>
+        <div>
+            <div id="abl">
+            <h3><u>Symptoms of High Blood Pressure</u></h3>
+            <p>Often called the "silent killer" because it may not cause symptoms. When symptoms do occur, they can include:</p>
+            <ol>
+                <li>Headaches</li>
+                <li>Shortness of breath</li>
+                <li>Nosebleeds</li>
+            </ol>
+        
+            <h3><u>Complications</u></h3>
+            <ol>
+                <li><b>Heart Attack or Stroke:</b> High BP cancause hardening and thickening of the arteries.</li>
+                <li><b>Aneurysm:</b> Increased BP can cause blood vessels to weaken and bulge.</li>
+                <li><b>Heart Failure:</b> The heart has to work harder to pump blood.</li>
+                <li><b>Kidney Damage:</b> Can lead to kidney failure.</li>
+            </ol>
+            </div>
+       
+        
+        </div>
+    </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check your health</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="navleft">
+                <div id="logo">
+                    <img src="{{ url_for('static', filename='images/bplogo.webp') }}" alt="" height="50px" width="50px">
+                </div>
+             <div id="head"><h2>MediCare</h2></div>
+                
+            </div>
+            <div id="navright">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/details"><button>Check your Blood Pressure</button></a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="section">
+            <div id="health">
+                <h1>CHECK YOUR HEALTH</h1>
+                <hr>
+                <p>Cheking blood pressure stage is crucial to assess cardiovascular health, detect hypertension or 
+                    hypotension, and mitigate risks of heart disease, 
+                    stroke, or organ damage, ensuring timely intervantion.</p>
+            
+        <div id="form">
+            <form method="POST", action="{{ url_for('predict') }}">
+                
+                <div id="div1">
+                    <label>Gender:</label>
+                <select name="Gender" id="slct" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                   
+                </select>
+                <br/><br/>
+                <label>Age:</label>
+                <br/>
+                <select name="Age" id="slct" required>
+                    <option value="">Select Age Group</option>
+                    <option value="18-34">18-34</option>
+                    <option value="35-50">35-50</option>
+                    <option value="51-64">51-64</option>
+                    <option value="65+">65+</option>
+                </select>
+                
+                <br/><br/>
+                <label>History:</label>
+                <select name="History" id="slct" required>
+                    <option value="">Any History?</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+                <br/><br/>
+                <label>BP Patient:</label>
+                <select name="Patient" id="slct" required>
+                    <option value="">Are you an old Patient? </option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+                <br/><br/>
+                <label>Take Medication:</label>
+                <select name="TakeMedication" id="slct" required>
+                    <option value="">Select TakeMedication </option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+                <br/><br/>
+                  
+            </div>
+            <div id="div2">
+                <label>Severity:</label>
+                <select name="Severity" id="slct" required>
+                    <option value="">Select Severity of BP Attacks </option>
+                    <option value="Mild">Mild</option>
+                    <option value="Server">Server</option>
+                    <option value="Moderate">Moderate</option>
+                </select>
+                <br/><br/>
+
+                <label>Breath Shortness:</label>
+        
+                    <select name="BreathShortness" id="slct" required>
+                        <option value="">Are you feeling breath Shortness?</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                    <br/><br/>
+                    <label>Visual Changes:</label>
+                    <select name="VisualChanges" id="slct" required>
+                        <option value="">Any Visual Changes?</option>
+                        
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                    <br/><br/>
+                    <label>Nose Bleeding:</label>
+                    <select name="NoseBleeding" id="slct" required>
+                        <option value="">Nose Bleeding Issue?</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </div>
+                <div id="div3">
+                    <label>Diagnoses:</label>
+                    <select name="Whendiagnoused" id="slct" required>
+                        <option value="">Time passed since diagnosed?</option>
+                        <option value="<1 Years"><1 Years</option>
+                        <option value="1 - 5 Years">1 - 5 Years</option>
+                        <option value=">5 Years">>5 Years</option>
+                    </select>
+                    <br/><br/>
+                    
+                        <label>Systolic Range:</label>
+                        <select name="Systolic" id="slct" required>
+                            <option value="">Upper Blood Pressure</option>
+                            
+                            <option value="111 - 120">111 - 120</option>
+                            <option value="121 - 130">121 - 130</option>
+                            <option value="130+">130+</option>
+                            <option value="100+">100+</option>
+                            
+                        </select>
+                        <br/><br/>
+                        <label>Diastolic Range:</label>
+                        <select name="Diastolic" id="slct" required>
+                            <option value="">Lower Blood Pressure</option>
+                            <option value="70 - 80">70 - 80</option>
+                            <option value="81 - 90">81 - 90</option>
+                            <option value="91 - 100">91 - 100</option>
+                            <option value="100+">100+</option>
+                            <option value="130+">130+</option>
+                            
+                        </select>
+                        <br/><br/>
+                        <label>Diet Control:</label>
+                        <select name="ControlledDiet" id="slct" required>
+                            <option value="">Do you follow Diet?</option>
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                      
+                        </div>
+                        <input type = "submit" id = "sbt" value = "Submit">
+                        <input type = "reset" id = "sbt" value = "Reset">
+
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+   
+
+            
+</body>
+</html>

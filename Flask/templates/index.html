@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div id="page">
+      
+    <div id="top">
+        <div id="tl">
+            <p>Monday-Saturday, 8AM to 10PM</p>
+        </div>
+        <div id="tr">
+            <p>Call us now +1 5589 55488 55</p>
+        </div>
+    </div>
+
+
+    <div id="nav">
+        <div id="navleft">
+            <div id="logo">
+                <img src="{{ url_for('static', filename='images/bplogo.webp') }}" alt="" height="50px" width="50px">
+            </div>
+         <div id="head"><h2>MediCare</h2></div>
+            
+        </div>
+        <div id="navright">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/details"><button onclick="details.html">Check your Blood Pressure</button></a></li>
+          </ul>
+        </div>
+    </div>
+    
+    
+    <div id="main">
+        <img src="{{ url_for('static', filename='images/bp.avif') }}" alt="" height="570px" width="1420px">
+        <div id="wel">
+            <h1>Welcome to MediCare</h1>
+            <p>Welcome to our Blood Pressure Prediction tool, designed to help you understand and 
+                manage your blood pressure effectively.
+                 Regular monitoring is key to preventing and controlling high blood pressure, a condition that can 
+                 lead to serious health issues if left unmanaged.</p>
+                <button id="btn"><a href="/info">Read More<a></button>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

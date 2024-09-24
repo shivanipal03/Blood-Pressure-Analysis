@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+   
+</head>
+<body>
+    <div id="rmain">
+        <div id="nav">
+            <div id="navleft">
+                <div id="logo">
+                    <img src="{{ url_for('static', filename='images/bplogo.webp') }}" alt="" height="50px" width="50px">
+                </div>
+             <div id="head"><h2>MediCare</h2></div>
+                
+            </div>
+            <div id="navright">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/details"><button>Check your Blood Pressure</button></a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="rsection">
+        <div id="rpage">
+            <div id="rpg">
+            <p id="resultp">Result Page</p>
+        </div>
+        <div id="rhome">
+            <a href="index.html" id="rlink">Home</a>
+        </div>
+    </div>
+    
+        <div id="result">
+            <h3><span id="prediction"><h2>Your Blood Pressure Stage is : {{ prediction_text }}<h2></span></h3>
+
+        </div>
+    
+        <div id="footer">
+            <footer>
+                <div id="footerl">
+                    <h3>Contact Us</h3>
+                    <p>If you have any question or need assistance, please feel free to reach out to us:</p>
+                <h4>MediCare</h4>
+                <p>Health Care Centre,
+                UP ,India</p>
+                <p><b>Phone: </b>+1 5589 55488 55</p>
+                <p><b>Email: </b>info@gmail.com</p>
+                <p>Our team is here to help you manage your blood pressure and maintain a healthy lifestyle. We look forward to hearing from you.</p>
+                <p>&copy 2024 Blood Pressure Predict. All rights reserved.</p>
+                </div>
+                <div id="footerr">
+                    <h3>About Us</h3>
+                        
+                    <p>MediCare is dedicated to providing reliable information and tools to help you manage your blood pressure. Uor platform offers valuable insights and practical advice to support your health and well-being.</p>
+                    <p>Our mission is to enhance your understanding of blood pressure and guide you in making informed decisions about your health. We strive to offer accessible resources and suppoert to improve your quality of life.</p>
+                </div>
+
+
+            </footer>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
