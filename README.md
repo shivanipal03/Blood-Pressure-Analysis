@@ -12,3 +12,6 @@ This project aims to harness the power of machine learning to analyze and predic
 4. Model Evaluation: Assess the performance of the models using metrics like accuracy, precision, recall, and F1 score, ensuring reliability and validity in predictions.
 
 5. User Interface: Create a user-friendly web application using HTML, CSS, and Flask that allows users to input their health metrics and receive real-time blood pressure predictions and recommendations.
+
+# Google Cloud Skills Boost Badges
+https://www.cloudskillsboost.google/public_profiles/b62f9eb7-81ee-4296-a694-c6cba2e1ad87
